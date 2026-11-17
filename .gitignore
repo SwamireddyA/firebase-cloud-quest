@@ -1,0 +1,14 @@
+# never commit secrets
+functions/.env
+functions/.env.*
+!functions/.env.example
+functions/node_modules/
+node_modules/
+.dart_tool/
+build/
+.idea/
+*.log
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+functions/.env

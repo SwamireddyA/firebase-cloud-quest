@@ -1,0 +1,45 @@
+[36m[1mi  emulators:[22m[39m Starting emulators: firestore
+[36m[1mi  emulators:[22m[39m Detected demo project ID "demo-cloud-quest", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail.
+[33m[1m!  emulators:[22m[39m It seems that you are running multiple instances of the emulator suite for project demo-cloud-quest. This may result in unexpected behavior.
+[36m[1mi  firestore:[22m[39m Firestore Emulator logging to [1mfirestore-debug.log[22m
+[32m[1m+  firestore:[22m[39m Firestore Emulator was started in standard edition.
+[32m[1m+  firestore:[22m[39m Firestore Emulator UI websocket is running on 9151.
+[36m[1mi [22m[39m Running script: [1mnpm --prefix functions test[22m
+npm notice run test
+npm notice run node --test
+[2026-11-17T03:15:49.753Z]  @firebase/firestore: Firestore (11.10.0): GrpcConnection RPC 'Write' stream 0x67a00059 error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L11, false for 'update' @ L11
+[2026-11-17T03:15:49.826Z]  @firebase/firestore: Firestore (11.10.0): GrpcConnection RPC 'Write' stream 0x67a0005a error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'update' @ L11
+✔ client cannot write reward fields to its own progress (5122.4798ms)
+[2026-11-17T03:15:49.922Z]  @firebase/firestore: Firestore (11.10.0): GrpcConnection RPC 'Write' stream 0x67a0005b error. Code: 7 Message: 7 PERMISSION_DENIED: 
+false for 'create' @ L11, false for 'update' @ L11
+✔ client cannot create progress for a user with none (93.2967ms)
+✔ learner reads own progress but not another learner's (283.5643ms)
+✔ signed-out user cannot read the challenge (91.3883ms)
+✔ tool returns only the caller's progress (400.6395ms)
+✔ coach calls the tool BEFORE answering, with the verified uid (38.2572ms)
+readMyQuestState failed: boom
+✔ adversarial: model-supplied uid or reward args are ignored; no other-user data (33.6717ms)
+✔ calling a non-allowlisted tool is rejected (1.0394ms)
+✔ tool failure returns an error, not an invented hint (1.9704ms)
+✔ running the coach does not change progress (read-only) (88.1165ms)
+✔ request validation: client uid ignored; blank, long, signed-out rejected (2.2633ms)
+✔ first completion awards 10 points + first-quest badge (1514.3477ms)
+✔ retry returns the same reward and does not duplicate it (188.9012ms)
+✔ two simultaneous requests produce exactly one reward (3025.13ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9531.0412
+[32m[1m+ [22m[39m Script exited successfully (code 0)
+[36m[1mi  emulators:[22m[39m Shutting down emulators.
+[36m[1mi  firestore:[22m[39m Stopping Firestore Emulator
+[33m[1m! [22m[39m Firestore Emulator has exited upon receiving signal: SIGINT
+[36m[1mi  hub:[22m[39m Stopping emulator hub
+[36m[1mi  logging:[22m[39m Stopping Logging Emulator
+exit code 0 

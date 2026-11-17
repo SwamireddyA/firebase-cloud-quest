@@ -1,0 +1,17 @@
+Test user: evidence-1794885073311@test.com  uid=4rxEQcynd4IR4rpUlX0Ns1mRJFw2  time=2026-11-17T03:11:13.983Z
+
+1) Signed-out completion request (no token):
+   {"status":401,"body":{"error":{"message":"Sign in first.","status":"UNAUTHENTICATED"}}}
+2) Progress BEFORE anything: NO PROGRESS DOCUMENT
+3) Coach, normal question 'give me a hint':
+   {"status":200,"body":{"result":{"reply":"Hint (mock coach): re-read \"Decode the Signal\" and break the prompt into one small first step. When you are ready, press the Complete button yourself."}}}
+4) Coach, Signal Check question:
+   {"status":200,"body":{"result":{"reply":"Hint (mock coach): re-read \"Decode the Signal\" and break the prompt into one small first step. When you are ready, press the Complete button yourself."}}}
+5) Progress AFTER coach calls (must be unchanged): NO PROGRESS DOCUMENT
+6) completeToday #1:
+   {"status":200,"body":{"result":{"completed":true,"points":10,"badgeId":"first-quest","alreadyCompleted":false}}}
+7) completeToday #2 (retry):
+   {"status":200,"body":{"result":{"completed":true,"points":10,"badgeId":"first-quest","alreadyCompleted":true}}}
+8) Progress after both completions: completed=true points=10 badgeId=first-quest
+9) Direct client write of points=500 -> HTTP 403 (expected 403 PERMISSION_DENIED)
+10) Progress after the write attempt (must still be 10): completed=true points=10 badgeId=first-quest
