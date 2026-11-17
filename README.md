@@ -1,7 +1,7 @@
 # Firebase Cloud Quest (CW-02 #03, Version 2 Signal Check)
 
-Pathway: **Graduate** | Name: Swami Reddy Ailuri | Repo: FILL IN (must be a NEW repo)
-Flutter version: FILL IN (`flutter --version`) | Target: Android Emulator `Medium_Phone` (emulator-5554), Android 17 (API 37), debug build
+Pathway: **Graduate** | Name: Swami Reddy Ailuri | Repo: https://github.com/SwamireddyA/firebase-cloud-quest
+Flutter version: 3.47.2 (stable), Dart 3.13.2 | Target: Android Emulator `Medium_Phone` (emulator-5554), Android 17 (API 37), debug build
 AI assistance disclosure: Claude (Anthropic) generated the code and drafted this README; at my request it also launched the helper scripts on my computer and read their output files. The Quest Coach itself can call Google Gemini (free tier); for the results below it ran in **mock mode** (`COACH_MOCK=true`). FILL IN / adjust to course policy.
 
 ## What this is
